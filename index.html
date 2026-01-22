@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>TechWave</title>
+
+ 
+</head>
+<body class="font-['Outfit'] bg-gradient-to-b from-purple-950 via-purple-900 to-purple-950 text-white overflow-x-hidden" style="background-color: #1a0b2e;">
+</head>
+<body>
+     <!-- Header -->
+  <header class="sticky top-0 z-50 h-20 flex items-center py-5 border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center w-full relative">
+      <!-- Logo -->
+      <div class="flex justify-start flex-1">
+        <a href="#" class="flex items-center">
+          <span class="text-4xl font-bold text-white">Tech<span class="highlight">Wave</span></span>
+        </a>
+      </div>
+
+      <!-- Navigation  -->
+      <div class="flex-1 justify-center hidden lg:flex">
+        <nav class="main-nav">
+          <ul class="flex gap-8 list-none">
+            <li><a href="#about" class="text-white text-lg font-medium hover:text-purple-500 transition-colors duration-300">About</a></li>
+            <li><a href="#episodes" class="text-white text-lg font-medium hover:text-purple-500 transition-colors duration-300">Episodes</a></li>
+            <li><a href="#host" class="text-white text-lg font-medium hover:text-purple-500 transition-colors duration-300">Host</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Header Right -->
+      <div class="flex justify-end gap-4 items-center flex-1">
+        <a href="#subscribe" class="hidden lg:inline-flex px-6 py-2 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 rounded-full text-white font-bold text-lg items-center gap-1 hover:scale-105 transition-transform duration-300">Subscribe <span class="arrow">&rarr;</span></a>
+
+        <button class="menu-toggle hidden lg:hidden bg-transparent border-none cursor-pointer p-2 hover:bg-white/10 transition-colors duration-300" aria-label="Toggle Menu">
+          <img src="./assets/hamburger-menu.png" alt="Menu" class="w-6 h-6">
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile  -->
+    <nav class="main-nav hidden flex-col absolute top-full left-0 w-full bg-purple-950/98 px-5 py-10 text-center border-b border-white/5">
+      <ul class="flex flex-col gap-6 list-none">
+        <li><a href="#about" class="text-white text-lg font-medium hover:text-purple-400 transition-colors duration-300">About</a></li>
+        <li><a href="#episodes" class="text-white text-lg font-medium hover:text-purple-400 transition-colors duration-300">Episodes</a></li>
+        <li><a href="#host" class="text-white text-lg font-medium hover:text-purple-400 transition-colors duration-300">Host</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section id="home" class="py-20 lg:py-32 text-center relative bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/hero-bg.png');">
+    <div class="max-w-3xl mx-auto px-6">
+      <!-- Hero Visual -->
+      <div class="relative w-96 h-96 mx-auto mb-8 lg:mb-16 flex items-center justify-center">
+        <img src="./assets/hero-circle.png" alt="" class="absolute w-full h-auto z-10">
+        <img src="./assets/microphone.png" alt="Microphone" class="hero-mic relative z-20 h-1/2 drop-shadow-lg">
+        <span class="absolute top-7 right-10 bg-emerald-400 text-black px-5 py-2 rounded-full text-xs font-black z-30 shadow-lg shadow-emerald-400/60 tracking-widest">NEW</span>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-5xl lg:text-7xl font-bold mb-4">TechWave</h1>
+      
+      <!-- Subtitle -->
+      <p class="text-gray-400 text-lg mb-8 max-w-xl mx-auto">Your daily dose of tech insights, productivity hacks, and personal growth.</p>
+
+      <!-- Buttons -->
+      <div class="flex justify-center gap-5 flex-wrap lg:flex-nowrap">
+        <a href="#" class="flex items-center gap-3 px-8 py-3 bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white font-bold rounded-full hover:scale-105 transition-transform duration-300">
+          <img src="./assets/spotify.png" alt="" class="h-5"> Listen on Spotify
+        </a>
+        <a href="#" class="flex items-center gap-3 px-8 py-3 bg-transparent border-2 border-emerald-400 text-emerald-400 font-bold rounded-full hover:bg-emerald-900/30 transition-colors duration-300">
+          <img src="./assets/message.png" alt="" class="h-5"> Subscribe
+        </a>
+      </div>
+    </div>
+  </section>
+
+     <!-- About Section -->
+    <section id="about" class="py-16">
+      <div class="max-w-2xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6">About The Podcast</h2>
+        <p class="text-gray-300 mb-6 leading-relaxed">TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. We break down complex topics into digestible insights, explore productivity strategies that actually work, and share stories of personal growth from industry leaders.</p>
+        <p class="text-gray-400 text-sm">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 text-center border-t border-white/5 py-10">
+        <div>
+          <h3 class="text-3xl lg:text-4xl font-bold text-emerald-400 mb-2">150K+</h3>
+          <p class="text-gray-400">Monthly Listeners</p>
+        </div>
+        <div>
+          <h3 class="text-3xl lg:text-4xl font-bold text-emerald-400 mb-2">200+</h3>
+          <p class="text-gray-400">Episodes Published</p>
+        </div>
+        <div>
+          <h3 class="text-3xl lg:text-4xl font-bold text-emerald-400 mb-2">4.9 <span class="text-2xl">★</span></h3>
+          <p class="text-gray-400">Average Rating</p>
+        </div>
+        <div>
+          <h3 class="text-3xl lg:text-4xl font-bold text-emerald-400 mb-2">50+</h3>
+          <p class="text-gray-400">Industry Experts</p>
+        </div>
+      </div>
+    </section>
+
+
+</body>
+</html>
